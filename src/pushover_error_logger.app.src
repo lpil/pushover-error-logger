@@ -1,0 +1,16 @@
+{application, pushover_error_logger,
+ [{description, "A logger handler that sends error logs to Pushover"},
+  {vsn, "0.1.0"},
+  {registered, []},
+  {applications,
+   [kernel,
+    stdlib,
+    inets,
+    ssl
+   ]},
+  {env,[]},
+  {modules, []},
+
+  {licenses, ["Apache-2.0"]},
+  {links, []}
+ ]}.
