@@ -47,7 +47,7 @@ end
 
 ### Gleam
 
-```rust
+```gleam
 pub fn main() {
   install_error_logger(
       "my-cool-web-app",
