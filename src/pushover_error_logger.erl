@@ -52,7 +52,7 @@ send_to_pushover(
         {"token", Token},
         {"user", User},
         % Pushover has a max body size of 1024 characters
-        {"message", strings:slice(Message, 0, 1024)}
+        {"message", string:slice(Message, 0, 1024)}
     ]),
     Endpoint = "https://api.pushover.net/1/messages.json",
     Request = {Endpoint, [], "application/x-www-form-urlencoded", Body},
